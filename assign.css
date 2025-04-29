@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.profile-img {
+    width: 150px;  /* Set the width to 150 pixels */
+    height: 150px; /* Set the height to 150 pixels */
+    border-radius: 50%;
+    margin-bottom: 20px; 
+    margin-right: 20px;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+nav ul li a:hover {
+    color: #e1dabe; /* Change color on hover */
+}
+
+h1{
+    text-align: center;
+
+}
+header {
+    background: #bd8989;
+    color: #110b0b;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+.project {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Image Sprite for Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('images.png'); /* Replace with your sprite image */
+    background-size: 90px 30px; /* Adjust based on your sprite dimensions */
+    display: inline-block;
+}
+
+.icon.facebook {
+    background-position: 50 0; /* Adjust based on your sprite */
+}
+
+.icon.twitter {
+    background-position: -40px 0; /* Adjust based on your sprite */
+}
+
+.icon.linkedin {
+    background-position: -70px
+}

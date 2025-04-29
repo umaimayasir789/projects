@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    div.background {
+      background: url(pink\ background.avif) repeat;
+      border: 2px solid black;
+    }
+
+    div.transbox {
+      margin: 30px;
+      background-color: #e8aec9;
+      border: 1px solid black;
+      opacity: 0.6;
+    }
+
+    div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    div.first {
+      background: rgba(4, 170, 109, 0.1);
+    }
+
+    div.second {
+      background: rgba(4, 170, 109, 0.3);
+    }
+
+    div.third {
+      background: rgba(4, 170, 109, 0.6);
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="transbox">
+        <p>This is some text that is placed in the transparent box.</p>
+      </div>
+    </div>
+    <h1>Transparent Box</h1>
+    <p>With opacity:</p>
+    <div style="opacity:0.1;">
+      <p>10% opacity</p>
+    </div>
+    <div style="opacity:0.3;">
+      <p>30% opacity</p>
+    </div>
+    <div style="opacity:0.6;">
+      <p>60% opacity</p>
+    </div>
+    <div>
+      <p>opacity 1</p>
+    </div>
+
+    <p>With RGBA color values:</p>
+    <div class="first">
+      <p>10% opacity</p>
+    </div>
+    <div class="second">
+      <p>30% opacity</p>
+    </div>
+    <div class="third">
+      <p>60% opacity</p>
+    </div>
+    <div>
+      <p>default</p>
+    </div>
+
+    <p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+
+
+  </body>
+
+</html>

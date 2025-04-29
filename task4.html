@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            background-color: #4a74a8;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a74a8;
+            color: white;
+        }
+        .form-container {
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4a74a8;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3a5c8f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Information Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>16</td>
+                <td>10th</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>17</td>
+                <td>11th</td>
+            </tr>
+        </table>
+
+        <div class="form-container">
+            <h3>Student Registration Form</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <h2>Audio and Video</h2>
+        <audio controls autoplay muted>
+            <source src="horse.ogg" type="audio/ogg">
+        </audio><br>
+        <video width="320" height="240" autoplay controls>
+        <source src="movie.ogg" type="video/ogg">
+        </video>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo">Good Evening!</p> 
+
+    <script>
+    if (new Date().getHours() < 18) {
+      document.getElementById("demo").innerHTML = "Good day!";
+    }
+    </script>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can hide HTML elements.</p>
+    
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pink background.avif'">Turn on the light</button>
+
+<img id="myImage" src="pink background.avif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='images.png'">Turn off the light</button>
+
+<h2>JavaScript switch</h2>
+<h2>The onclick Attribute</h2>
+
+<p>The pop() method returns the value that was "popped out":</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple",];
+document.getElementById("demo1").innerHTML = fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+
+<p id="demo"></p>
+
+<script>
+let day;
+ switch (new Date().getDay())
+ {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+<script>
+    
+let x = "0";
+switch (x) {
+  case 0:
+    x = "Off";
+    break;
+  case 1:
+    x = "On";
+    break;
+  default:
+    x = "No value found";
+}
+document.getElementById("demo").innerHTML ="x:"+x;
+</script>
+<script>
+  const cars = ["BMW", "Volvo", "Saab", "Ford"];
+  let i = 0;
+  let text = "";
+  for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+  }
+  document.getElementById("demo").innerHTML = text;
+  </script>
+  <script> 
+    
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+  
+</body>
+</html>
